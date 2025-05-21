@@ -1,0 +1,14 @@
+<div>
+    <app-logo></app-logo>
+    {{nome}}
+    <h2>Il mio animale si chiama <strong>{{animale.nome}}</strong> ed è un {{animale.razza}}</h2>
+
+    <h3 class="mt-5">Il prodotto con id: {{prodotto.id}} è {{prodotto.nome}} ed è {{prodotto.descrizione}} al costo di {{prodotto.prezzo}} attualmente in offerta: {{prodotto.inOfferta}}</h3>
+
+    <h3 class="mt-5">Prodotto opzionale definito in un metodo: {{prodotto2?.nome}}</h3>
+    <!--se definisco una proprietà opzionale e voglio visualizzarla in html mi darebbe errore se non è definita. se metto ? mostra una stringa vuota se la proprietà ha valore undefined, bypassa l'errore-->
+
+    <h3 class="mt-5">Prodotto opzionale bici definito: {{bici!.nome}}</h3>
+    <!--se metto ! sto forzando l'istruzione perchè sono sicuro che in base al flusso del codice quella proprietà opzionale avrà un valore assegnato diverso da undefined a quel punto-->
+</div>
+<hr>
