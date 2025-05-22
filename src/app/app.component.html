@@ -1,17 +1,25 @@
 <!-- <app-header></app-header> -->
 <div class="container p-4">
-<app-title testo="Appena inseriti"></app-title>
-<h3 class="mt-3">Novità</h3>
-<div class="container p-4">
-    <app-lista-prodotti></app-lista-prodotti>
-</div>
-<app-title testo="Potrebbe interessarti anche..."></app-title>
-<h3 class="mt-3">Suggeriti</h3>
-<div class="container p-4">
-    <app-lista-prodotti></app-lista-prodotti>
-</div>
-<app-title testo="Info"></app-title>
-<p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rem commodi sunt ut velit, expedita eius nisi assumenda quia consequuntur itaque ipsam ad voluptatum tempore, pariatur maiores. Iure, laborum dolores!</p>
+  <app-title testo="Appena inseriti"></app-title>
+  <div class="container p-4">
+    <app-lista-prodotti
+      titolo="Novità"
+      [prodotti]="prodotti_novita"
+    ></app-lista-prodotti>
+  </div>
+  <app-title testo="Potrebbe interessarti anche..."></app-title>
+  <div class="container p-4">
+    <app-lista-prodotti
+      titolo="Suggeriti"
+      [prodotti]="prodotti_suggeriti"
+    ></app-lista-prodotti>
+  </div>
+  <app-title testo="Info"></app-title>
+  <p class="p-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In rem commodi sunt
+    ut velit, expedita eius nisi assumenda quia consequuntur itaque ipsam ad
+    voluptatum tempore, pariatur maiores. Iure, laborum dolores!
+  </p>
 </div>
 <app-footer></app-footer>
 <router-outlet />

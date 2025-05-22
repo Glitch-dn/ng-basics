@@ -1,6 +1,16 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* You can add global styles to this file, and also import other style files */
-h1{
-  color: red;
+h1 {
+  color: white;
+}
+
+.verde{
+  background-color: darkgreen;
+  color: wheat;
+}
+
+.rosso{
+  background-color: darkred;
+  color: burlywood;
 }

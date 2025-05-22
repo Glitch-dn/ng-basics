@@ -1,10 +1,12 @@
-<div class="d-flex flex-wrap justify-center gap-2" style="margin: 0 auto;">
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
+<h3>{{ titolo }}</h3>
+<hr />
+<div class="d-flex flex-wrap justify-center gap-2" style="margin: 0 auto">
+  <!--ciclo for tipo per angular così crea un prodotto card per ogni oggetto dell'array collegato [prodotti]="prodotti_novita-->
+
+  <!--*ngFor direttiva vecchia vale per tutti i tag html e li ripete-->
+  @for(p of prodotti; track p.nome){
+  <app-prodotto-card [prodotto]="p"></app-prodotto-card>
+  }
 </div>
+
+<!-- {{prodotti | json}}pipe per vedere un array di oggetti renderizzato, è come un JSON.stringify -->

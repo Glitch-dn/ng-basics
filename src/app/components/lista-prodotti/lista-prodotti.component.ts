@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProdottoCardComponent } from '../prodotto-card/prodotto-card.component';
+import { Prodotto } from '../../models/Prodotto';
+import { JsonPipe } from '@angular/common';
 
 
 @Component({
@@ -9,5 +11,8 @@ import { ProdottoCardComponent } from '../prodotto-card/prodotto-card.component'
   styleUrl: './lista-prodotti.component.css'
 })
 export class ListaProdottiComponent {
-
+  @Input()
+  prodotti: Prodotto[] = [];
+  @Input()
+  titolo: string = "";
 }
