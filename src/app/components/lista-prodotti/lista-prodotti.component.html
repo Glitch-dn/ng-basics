@@ -5,7 +5,10 @@
 
   <!--*ngFor direttiva vecchia vale per tutti i tag html e li ripete-->
   @for(p of prodotti; track p.nome){
-  <app-prodotto-card [prodotto]="p"></app-prodotto-card>
+  <app-prodotto-card
+    [prodotto]="p"
+    (prodottoSelezionato)="selezionaProdotto($event)"
+  ></app-prodotto-card>
   }
 </div>
 
