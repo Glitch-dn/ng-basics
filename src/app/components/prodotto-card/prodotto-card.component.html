@@ -17,6 +17,9 @@
     <p class="card-text">{{ prodotto.desc }}</p>
     <button class="btn btn-primary" (click)="saluta()">Saluta</button>
     <!--aggiungo il click in questo modo associando la funzione saluta definita nel ts corrispondente-->
+    <button class="btn btn-success m-1" (click)="scatenaEvento()">
+      Seleziona prodotto
+    </button>
   </div>
 </div>
 } @else{

@@ -39,6 +39,12 @@ export class AppComponent {
       desc: "Ad aria",
       prezzo: 1200,
       foto: "https://picsum.photos/300/200"
+    },
+    {
+      nome: "Pallone",
+      desc: "Calcio",
+      prezzo: 20,
+      foto: "https://picsum.photos/300/200"
     }
   ]
   prodotti_suggeriti: Prodotto[] = [
@@ -61,9 +67,9 @@ export class AppComponent {
       foto: "https://picsum.photos/300/200"
     },
     {
-      nome: "Chitarra",
-      desc: "Classica",
-      prezzo: 110,
+      nome: "Pianoforte",
+      desc: "Coda",
+      prezzo: 11000,
       foto: "https://picsum.photos/300/200"
     }
   ]
